@@ -6,7 +6,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "tsc -b",
-    "clean": "rm -rf lib && rm *.tsbuildinfo"
+    "clean": "rm -rf lib && rm -f *.tsbuildinfo"
   },
   "license": "ISC",
   "dependencies": {
