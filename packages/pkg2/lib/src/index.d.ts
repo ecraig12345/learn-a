@@ -1,1 +1,1 @@
-export declare function fn4(): import("../../pkg1/src").IThing;
+export declare function fn4(): import("@fluentui/pkg1").IThing;
