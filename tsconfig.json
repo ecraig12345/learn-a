@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@fluentui/*": ["packages/*/src"]
+    }
+  }
+}
