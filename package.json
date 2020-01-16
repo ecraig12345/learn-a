@@ -1,6 +1,16 @@
 {
-	"devDependencies": {
-		"lerna": "^2.11.0",
-		"typescript": "^3.0.0-dev.20180626"
-	}
+  "private": true,
+  "scripts": {
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.10.7",
+    "typescript": "3.7.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
 }

@@ -4,8 +4,5 @@
     "outDir": "lib",
     "rootDir": "src"
   },
-  "references": [
-    { "path": "../pkg1" },
-    { "path": "../pkg2" }
-  ]
+  "references": [{ "path": "../pkg1" }, { "path": "../pkg2" }]
 }
