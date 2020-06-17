@@ -1,5 +1,7 @@
 # Issue repro
 
+(The build output demonstrating the issue is checked in to the repo for convenient viewing.)
+
 `@fluentui/pkg2` depends on `@fluentui/pkg1`.
 
 The packages' tsconfigs use project references.
@@ -51,10 +53,9 @@ pkg2/
     pkg2/src/<files>
 ```
 
-## Workaround
+## Workaround?
 
-Remove `baseUrl` and `paths` from tsconfig.
-
-In each project's package.json, set `"main": "src/index.ts"`. (In a real project, add a pre-publish step to correct this to point to `lib/index.js`.)
-
-See the most recent commit in the [`inferred-relative-imports-workaround` branch](https://github.com/ecraig12345/learn-a/tree/inferred-relative-imports-workaround) for full details.
+One possible workaround (which I'm not sure if it will actually work in all cases):
+- Remove `baseUrl` and `paths` from tsconfig.
+- In each project's package.json, set `"main": "src/index.ts"`. (In a real project, add a pre-publish step to correct this to point to `lib/index.js`.)
+- See the most recent commit in the [`inferred-relative-imports-workaround` branch](https://github.com/ecraig12345/learn-a/tree/inferred-relative-imports-workaround) for full details of this possible workaround.
